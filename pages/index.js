@@ -57,14 +57,17 @@ export default function Home() {
 
     <h1><span>PROGRA</span><span>MODORO</span></h1>
 
-      {/* <span>Temporizador: {timer}  </span> */}
-      <span>Temporizador: {timeLeft}  </span>
-
-      <button onClick={() => play()}>Play</button>
-      <button onClick={() => pause()}>Pause</button>
-      <button onClick={() => stop()}>Stop</button>
+     
+<div>
   
-      <br />
+<button className={styles.buttonMenu} onClick={() => play()}>Play</button>
+      <button className={styles.buttonMenu} onClick={() => pause()}>Pause</button>
+      <button className={styles.buttonMenu} onClick={() => stop()}>Stop</button>
+  
+</div>
+   {/* <span>Temporizador: {timer}  </span> */}
+   <span>Temporizador: {timeLeft}  </span>
+
       <br />
       
       <div className={styles.pomodoro}>
